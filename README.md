@@ -13,7 +13,6 @@ monitoring**, or **data pipeline automation**.
 
 ## File Description
 
-  -----------------------------------------------------------------------
   File                       Purpose
   -------------------------- --------------------------------------------
   **My_Project.py**          Main automation script --- reads disk usage
@@ -32,7 +31,6 @@ monitoring**, or **data pipeline automation**.
                              handled within the project.
   -----------------------------------------------------------------------
 
-------------------------------------------------------------------------
 
 ## Requirements
 
@@ -126,21 +124,13 @@ python3 My_Project.py
 
 ## Example CSV Data
 
-  -------------------------------------------------------------------------------------------------------------
-  filesystem       size   used   avail   usage_with_per   mounted_on   datetime     ip_address       hostname
-  ---------------- ------ ------ ------- ---------------- ------------ ------------ ---------------- ----------
-  /dev/nvme0n1p2   19G    11G    7.2G    60               /            2025-10-24   172.16.248.129   vmone
-                                                                       20:15:03                      
+| filesystem      | size | used | avail | usage_with_per | mounted_on | datetime           | ip_address     | hostname |
+|-----------------|------|------|--------|----------------|-------------|--------------------|----------------|-----------|
+| /dev/nvme0n1p2  | 19G  | 11G  | 7.2G  | 60             | /           | 2025-10-24 20:15:03 | 172.16.248.129 | vmone     |
+| /dev/nvme0n1p1  | 952M | 6.6M | 945M  | 1              | /boot/efi   | 2025-10-24 20:05:10 | 172.16.248.129 | vmone     |
 
-  /dev/nvme0n1p1   952M   6.6M   945M    1                /boot/efi    2025-10-24   172.16.248.129   vmone
-                                                                       20:05:10                      
-  -------------------------------------------------------------------------------------------------------------
+                                                                                            
 
 ------------------------------------------------------------------------
-
-## Author & License
-
 **Author:** Anya Yameen\
-**License:** MIT License --- You are free to modify, distribute, or use
-this project for personal and educational purposes.
 
