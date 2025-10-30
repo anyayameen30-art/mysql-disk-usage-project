@@ -7,11 +7,11 @@ It demonstrates password encryption, CSV ingestion, and automated database integ
 ---
 
 ## File Purpose
-- My_Project.py — Main automation script that reads disk usage CSV data, encrypts MySQL credentials, and inserts data into the database.  
-- mylinux.json — Configuration file containing MySQL credentials and the Linux command used to collect disk usage data.  
-- mycsvfile.csv — Example CSV file with disk usage details including filesystem, size, used, available space, mount point, IP, and hostname.  
-- mysql_credentials.py — Demonstrates how credentials can be securely handled within the project.
-  -----------------------------------------------------------------------
+- `My_Project.py` — Main automation script that reads disk usage CSV data, encrypts MySQL credentials, and inserts data into the database.  
+- `mylinux.json` — Configuration file containing MySQL credentials and the Linux command used to collect disk usage data.  
+- `mycsvfile.csv` — Example CSV file with disk usage details including filesystem, size, used, available space, mount point, IP, and hostname.  
+- `mysql_credentials.py` — Demonstrates how credentials can be securely handled within the project.
+---
 
 ## Requirements
 
