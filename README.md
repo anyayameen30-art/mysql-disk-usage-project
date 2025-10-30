@@ -1,29 +1,17 @@
 # MySQL Disk Usage Project
 
 ## Overview
-This project automates the process of collecting Linux disk usage data (`df -h`), converting it into CSV format, and securely inserting that data into a MySQL database using Python.  
+This project automates the process of collecting Linux disk usage data (df -h), converting it into CSV format, and securely inserting that data into a MySQL database using Python.  
 It demonstrates password encryption, CSV ingestion, and automated database integration — ideal for DevOps, system monitoring, or data pipeline automation.
-------------------------------------------------------------------------
-## File Description
 
-  File                       Purpose
-  -------------------------- --------------------------------------------
-  **My_Project.py**          Main automation script --- reads disk usage
-                             CSV data, encrypts MySQL credentials, and
-                             inserts data into the database.
+---
 
-  **mylinux.json**           Configuration file containing MySQL
-                             credentials and the Linux command used to
-                             collect disk usage data.
-
-  **mycsvfile.csv**          Example CSV file with disk usage details
-                             (filesystem, size, used, available space,
-                             mount point, IP, and hostname).
-
-  **mysql_credentials.py**   Demonstrates how credentials can be securely
-                             handled within the project.
+## File Purpose
+- My_Project.py — Main automation script that reads disk usage CSV data, encrypts MySQL credentials, and inserts data into the database.  
+- mylinux.json — Configuration file containing MySQL credentials and the Linux command used to collect disk usage data.  
+- mycsvfile.csv — Example CSV file with disk usage details including filesystem, size, used, available space, mount point, IP, and hostname.  
+- mysql_credentials.py — Demonstrates how credentials can be securely handled within the project.
   -----------------------------------------------------------------------
-
 
 ## Requirements
 
