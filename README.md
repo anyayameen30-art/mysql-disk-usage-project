@@ -1,4 +1,5 @@
 # MySQL Disk Usage Project
+A Python-based automation tool that collects Linux disk usage metrics and logs them into a MySQL database for monitoring and analysis.
 
 ## Overview
 This project automates the process of collecting Linux disk usage data (df -h), converting it into CSV format, and securely inserting that data into a MySQL database using Python.  
@@ -80,6 +81,12 @@ python3 My_Project.py
     CSV file reading and storing into mysql DB
     Data has been imported into DB successfully
 
+## Try It Yourself
+1. Run `df -h` on your Linux or Ubuntu system.  
+2. Copy the output into a CSV file following the same format as `mycsvfile.csv`.  
+3. Edit `mylinux.json` with your own MySQL credentials.  
+4. Run `python3 My_Project.py` and verify that the data is successfully inserted into your MySQL table.
+
 ------------------------------------------------------------------------
 
 ## Key Features
@@ -113,5 +120,11 @@ python3 My_Project.py
                                                                                             
 
 ------------------------------------------------------------------------
-**Author:** Anya Yameen
+---
+**Author:** Anya Yameen  
+*DevOps | Python | Automation | Scripting*  
+GitHub: [anyayameen30-art](https://github.com/anyayameen30-art)
+
+**License:** MIT — Free to use, modify, and share for personal or educational purposes.
+
 
