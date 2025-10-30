@@ -11,26 +11,26 @@ monitoring**, or **data pipeline automation**.
 
 ------------------------------------------------------------------------
 
-## File Overview
+## File Description
 
-  ----------------------------------------------------------------------------
-  File                       Description
-  -------------------------- -------------------------------------------------
-  **My_Project.py**          Main Python automation script --- reads CSV data,
-                             encrypts MySQL credentials, and inserts parsed
-                             disk usage information into the database.
+  -----------------------------------------------------------------------
+  File                       Purpose
+  -------------------------- --------------------------------------------
+  **My_Project.py**          Main automation script --- reads disk usage
+                             CSV data, encrypts MySQL credentials, and
+                             inserts data into the database.
 
-  **mylinux.json**           Configuration file containing MySQL login
-                             credentials and the Linux command used to extract
-                             disk usage data (`df -h`).
+  **mylinux.json**           Configuration file containing MySQL
+                             credentials and the Linux command used to
+                             collect disk usage data.
 
-  **mycsvfile.csv**          CSV file containing disk usage metrics like
-                             filesystem, size, used, available space, and
-                             hostname.
+  **mycsvfile.csv**          Example CSV file with disk usage details
+                             (filesystem, size, used, available space,
+                             mount point, IP, and hostname).
 
-  **mysql_credentials.py**   Example script showing how credentials can be
-                             defined and securely handled within the project.
-  ----------------------------------------------------------------------------
+  **mysql_credentials.py**   Demonstrates how credentials can be securely
+                             handled within the project.
+  -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
@@ -42,10 +42,10 @@ monitoring**, or **data pipeline automation**.
 pip install cryptography mysql-connector-python
 ```
 
-**Modules used:** - `cryptography.Fernet` → for password encryption &
-decryption\
-- `mysql.connector` → for database connection and data insertion\
-- Built-in: `json`, `csv`, `os`
+**Libraries used:** - `cryptography.Fernet` → for encrypting and
+decrypting passwords\
+- `mysql.connector` → for MySQL database operations\
+- `json`, `csv`, `os` → standard Python modules
 
 ------------------------------------------------------------------------
 
@@ -53,17 +53,16 @@ decryption\
 
 Before running the script:
 
-1.  **Ensure your MySQL server is running and accessible.**\
+1.  Ensure your **MySQL server** is up and running.\
 
-2.  **Update file paths** in `My_Project.py` to match your local
-    environment:
+2.  Update file paths in `My_Project.py` to match your environment:
 
     ``` python
     jsonfile = "/path/to/mylinux.json"
     csvpath = "/path/to/mycsvfile.csv"
     ```
 
-3.  **Create the target MySQL table** using the schema below:
+3.  Create the MySQL table using the schema below:
 
     ``` sql
     CREATE TABLE my_df_data (
@@ -104,25 +103,24 @@ python3 My_Project.py
 
 ------------------------------------------------------------------------
 
-## Features
+## Key Features
 
--   🔒 Secure password encryption with `cryptography.Fernet`
--   💾 Automatic MySQL data insertion from CSV
--   📊 Real-time Linux disk usage (`df -h`) monitoring
--   🖥️ Compatible with both **macOS** and **Ubuntu**
--   🌐 Captures **IP address** and **hostname** for multi-system
-    tracking
+- Secure password encryption using `cryptography.Fernet`\
+- Automated MySQL data insertion from CSV files\
+- Real-time Linux disk usage monitoring via `df -h`\
+- Cross-platform support (macOS & Ubuntu)\
+- Tracks both **IP address** and **hostname** for multiple servers
 
 ------------------------------------------------------------------------
 
-## 🗂️ Directory Structure
+## Directory Structure
 
     mysql-disk-usage-project/
-    ├── My_Project.py           # Main Python script
+    ├── My_Project.py           # Main automation script
     ├── mylinux.json            # MySQL credentials + df command
-    ├── mycsvfile.csv           # Example disk usage data
-    ├── mysql_credentials.py    # Example credentials file
-    └── README.md               # Project documentation
+    ├── mycsvfile.csv           # Disk usage data file
+    ├── mysql_credentials.py    # Credentials handling example
+    └── README.md               # Documentation
 
 ------------------------------------------------------------------------
 
@@ -140,14 +138,9 @@ python3 My_Project.py
 
 ------------------------------------------------------------------------
 
-## Author
+## Author & License
 
-**Anya Yameen**\
+**Author:** Anya Yameen\
+**License:** MIT License --- You are free to modify, distribute, or use
+this project for personal and educational purposes.
 
-------------------------------------------------------------------------
-
-## 🪪 License
-
-This project is licensed under the **MIT License**.\
-You are free to modify, distribute, or use it for personal and
-educational purposes.
