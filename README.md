@@ -1,16 +1,9 @@
 # MySQL Disk Usage Project
 
 ## Overview
-
-This project automates the process of collecting **Linux disk usage data
-(`df -h`)**, converting it into **CSV format**, and securely inserting
-that data into a **MySQL database** using Python.\
-It demonstrates **password encryption**, **CSV ingestion**, and
-**automated database integration** --- ideal for **DevOps**, **system
-monitoring**, or **data pipeline automation**.
-
+This project automates the process of collecting Linux disk usage data (`df -h`), converting it into CSV format, and securely inserting that data into a MySQL database using Python.  
+It demonstrates password encryption, CSV ingestion, and automated database integration — ideal for DevOps, system monitoring, or data pipeline automation.
 ------------------------------------------------------------------------
-
 ## File Description
 
   File                       Purpose
@@ -132,5 +125,5 @@ python3 My_Project.py
                                                                                             
 
 ------------------------------------------------------------------------
-**Author:** Anya Yameen\
+**Author:** Anya Yameen
 
